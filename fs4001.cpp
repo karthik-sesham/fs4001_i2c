@@ -1,11 +1,4 @@
-#if ARDUINO >= 100
-#include "Arduino.h"
-#else
-#include "WProgram.h"
-#endif
-#include <Wire.h>
-#include _FS4001_H_
-/*----------------------------------------*/
+#include "fs4001.h"
 
 static inline uint8_t i2cread() {
   #if ARDUINO >= 100

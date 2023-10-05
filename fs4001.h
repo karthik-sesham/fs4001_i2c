@@ -1,6 +1,12 @@
-
 #ifndef _FS4001_H_
 #define _FS4001_H_
+
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WProgram.h"
+#endif
+#include <Wire.h>
 /*----------------------------------------*/
 
 //Hex Commands for FS4001
